@@ -45,6 +45,35 @@ print('Passage shape : ', passengerWithAge.shape) # Passage shape :  (714, 12)
 # specific rows and columns from a DataFrame
 # names of the passengers older than 35 years
 
-age_passengers = titanic[titanic["Age"] > 35]
+age_passengers = titanic.loc[titanic["Age"] > 35, ("PassengerId", "Name", "Sex", "Age" )]
 print(age_passengers)
+
+age_passengers_2 = titanic.loc[titanic["Age"] > 35, :]
+print(age_passengers_2)
+
+
+
+# rows 10 till 16 and columns 3 to 5
+passengers_2 = titanic.iloc[10:17, 3:6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
