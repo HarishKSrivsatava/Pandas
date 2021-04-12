@@ -44,3 +44,7 @@ print('Passage shape : ', passengerWithAge.shape) # Passage shape :  (714, 12)
 
 # specific rows and columns from a DataFrame
 # names of the passengers older than 35 years
+
+age_passengers = titanic[titanic["Age"] > 35]
+print(age_passengers)
+
